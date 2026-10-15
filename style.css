@@ -1,0 +1,18 @@
+:root { color-scheme: light dark; --fon: #fff; --tekst: #111; --tiho: #777; --cherta: #ddd; --akcent: #c62828; }
+@media (prefers-color-scheme: dark) { :root { --fon: #111; --tekst: #eee; --tiho: #999; --cherta: #333; } }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0 16px 32px; font: 17px/1.4 -apple-system, system-ui, sans-serif; background: var(--fon); color: var(--tekst); }
+header { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+h1 { font-size: 20px; margin: 0; }
+button { font: inherit; padding: 8px 14px; border: 1px solid var(--cherta); border-radius: 8px; background: transparent; color: inherit; }
+#knopka-nastroek { padding: 4px 10px; }
+label { display: block; margin: 10px 0; color: var(--tiho); font-size: 14px; }
+input { display: block; width: 100%; margin-top: 4px; font: inherit; padding: 8px; border: 1px solid var(--cherta); border-radius: 8px; background: transparent; color: var(--tekst); }
+.ryad { display: flex; gap: 8px; }
+.tiho { color: var(--tiho); }
+#sostoyanie { font-size: 14px; min-height: 1.4em; }
+#sostoyanie.beda { color: var(--akcent); }
+ul { list-style: none; padding: 0; margin: 0; }
+li { padding: 12px 0; border-bottom: 1px solid var(--cherta); }
+.data { font-weight: 600; }
+.pesni { color: var(--tiho); font-size: 14px; }

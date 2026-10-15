@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://api.github.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>EasyShow · план</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>План</h1>
+  <button id="knopka-nastroek" type="button" title="Ключ и подпись" aria-label="Ключ и подпись">⚙︎</button>
+</header>
+
+<section id="nastroyki" hidden>
+  <label>Ключ общей базы
+    <input id="pole-klyucha" type="password" autocomplete="off" spellcheck="false">
+  </label>
+  <label>Подпись
+    <input id="pole-podpisi" type="text" autocomplete="off">
+  </label>
+  <label>Ветка
+    <input id="pole-vetki" type="text" autocomplete="off" spellcheck="false">
+  </label>
+  <div class="ryad">
+    <button id="knopka-sohranit" type="button">Сохранить</button>
+    <button id="knopka-zabyt" type="button" class="tiho">Забыть ключ</button>
+  </div>
+</section>
+
+<p id="sostoyanie" class="tiho" role="status"></p>
+<ul id="spisok-planov"></ul>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
